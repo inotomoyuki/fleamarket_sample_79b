@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'items#index'
+  resources :login, only: [:index, :new]
+  root 'login#index'
 end
